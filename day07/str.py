@@ -7,11 +7,13 @@ def main():
     # 生成字符串的大写
     print(str1.upper())
     # 查找子字符串中查找子串的位置
-    print(str1.find('or'))
+    print(str1.find('o'))
+    print(str1[:str1.find('o')])
+    print(str1[str1.find('o')+1:])
     print(str1.find('shit')) # 找不到返回-1
     # 与find类似， 找不到会跑出异常
     print(str1.index('or'))
-    # print(str1.index('shit'))
+    print(str1.index('shit'))
     # 检查字符串是否以指定的子串结尾
     print(str1.endswith('!'))
     # 检查字符串是否以指定的子串开始
