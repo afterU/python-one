@@ -11,7 +11,7 @@
 
 def main():
     fruits = ['grape', 'apple', 'strawberry', 'waxberry']
-    fruits += ['p[itaya', 'pear', 'mango']
+    fruits += ['pitaya', 'pear', 'mango']
     # 遍历列表
     for fruit in fruits:
         print(fruit.title(), end='')
