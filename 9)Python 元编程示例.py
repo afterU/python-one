@@ -33,7 +33,26 @@ def countdown(n):
         print(n)
 
 countdown(1000)
-countdown(10000)
+print(countdown.__name__)
+print(countdown.__annotations__)
+
+def timethis2(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        print(func.__name__, end - start)
+        return result
+    return wrapper
+
+@timethis2
+def countdown2(n):
+    while n > 0:
+        n -= 1
+        print(n)
+countdown2(2000)
+print(countdown2.__name__)
+print(countdown2.__annotations__)
 
 # 例子：用装饰器来实现单例模式。
 # from functools import wraps

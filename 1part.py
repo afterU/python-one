@@ -43,7 +43,7 @@ def search(lines, pattern, history=5):
 
 # Example use on a file
 if __name__ == '__main__':
-    with open(r'9part.py') as f:
+    with open(r'9)Python 元编程示例.py') as f:
         for line, prevlines in search(f, 'python', 5):
             for pline in prevlines:
                 print(pline, end='')
